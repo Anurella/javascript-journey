@@ -1,0 +1,57 @@
+<script>
+    let content = {
+  "query": `{
+    viewer {
+    name
+     repositories(last: 20) {
+       nodes {
+         name
+       }
+     }
+    bio
+   }
+  }
+`};
+
+let body = JSON.stringify(content);
+let repos = [];
+
+fetch('https://api.github.com/graphql', {
+  method: 'post',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': ' bearer b5dbf73040f64e1b78d017178c37ec17dc77994a'
+  },
+  body: body
+})
+  .then(response => response.json())
+  .then(data => {
+    document.body.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+  });
+
+
+
+  Gitquery = {
+  viewer {
+    login
+    repositories(last: 20) {
+      nodes {
+        name
+        description
+        languages(first: 10) {
+          nodes {
+            color
+            name
+          }
+        }
+        forkCount
+      }
+    }
+    updatedAt
+    bio
+    id
+    name
+  }
+}
+
+</script>

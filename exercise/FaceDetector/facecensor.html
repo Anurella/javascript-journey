@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amaka">
+    <title> Face Censorship and Detection </title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        *{ box-sizing: border-box; }
+
+        body{
+            margin:0;
+        }
+
+        .wrap{
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .videoCont, .imgCont {
+            position: relative;
+            display:grid;
+            justify-content:center;
+            align-items: center;
+        }
+        .videoCont > *, .imgCont > * {
+             grid-column:1;
+             grid-row: 1;
+        }
+        .face, .faceI{
+            position:absolute;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+     <h3> Hello </h3>
+    <div class="wrap">
+        <div class="videoCont">
+            <video class="webcam"></video>
+            <canvas class="video"></canvas>
+            <canvas class="face"></canvas>
+        </div>
+       <div class="imgCont">
+        <img src="./faces.jpeg" alt="Detect Face 😆 ">
+        <canvas class="videoI"></canvas>
+        <canvas class="faceI"></canvas>
+     </div>
+       
+    </div>
+
+    <script src="./pixelated-face.js">
+    </script>
+
+</body>
+</html>

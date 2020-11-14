@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loops and Iteration </title>
+    <meta name="author" content="Anurellaß">
+    <meta name="description" content="JS course 30 by Wesbos - 19-04-2020">
+</head>
+<body>
+
+    <h2> Loops and Iteration </h2>
+    
+
+    <script>
+        // let and const are blocked scoped but var for global 
+
+        const numbers = [62, 43, 11, 45, 20, 11, 23, 1, 5];
+        const name = "Amaka 👨‍👦 "
+        // for 
+        /* for (let index = 0; index < numbers.length; index++) {
+            const element = numbers[index];
+            console.log(element);
+        } */
+
+
+        /* - for of - mostly used for iterables ( iterables are objects that implement the @@iterator method, e.g Array, Map, Set, arguments object) 
+            - for of works like spread [...] sometimes
+            - for of is good for sequencing  promises
+            - when using for of with arrays, it does not give the index but the raw value. 
+        */
+        for (const iterator of name) {
+            console.log(iterator);
+        }
+
+        /* for in 
+          - used for looping over keys of an object 
+          - grabs prototype methods and properties attached to an object else Object.entries is a good option
+          
+        */
+
+        const extra = ["⛽", " 🙂 "," 🐣 " ];
+        const anu = {
+            name: 'Anurella',
+            age: 24,
+            cool: 'yes'
+        };
+
+        for (const key in anu) {
+            if (anu.hasOwnProperty(key)) {
+                const element = key;
+                console.log(element);  
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

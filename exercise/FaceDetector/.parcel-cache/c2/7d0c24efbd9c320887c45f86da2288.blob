@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amaka">
+    <title> Face Censorship and Detection </title>
+</head>
+<body>
+
+    <div class="wrap">
+        <video src="cd4591d9e0cefb36ddbdbbc82504948f" class="webcam"></video>
+        <canvas class="video"></canvas>
+        <canvas class="face"></canvas>
+    </div>
+
+    <script src="88c75fca641c19c7fa559be918e46f65" data-parcel-key="65616a178b57f05624f0db7a37029453">
+
+    </script>
+
+    <style data-parcel-key="545ef148b459a5d4287c8bf3d05d65f3">
+        *{ box-sizing: border-box;}
+    </style>
+    
+    <script></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dom Cardio</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <p> Events Module JS Course </p>
+  <button class="butts"> Click Me ! </button>
+  <button class="cold"> It is Cold </button>
+
+  <h5> Buy Buttons </h5>
+  <button data-price="100" class="buy">Item <span>1</span></button>
+  <button data-price="200" class="buy">Item <span>3</span></button>
+  <button data-price="300" class="buy">Item <span>4</span></button>
+  <button data-price="400" class="buy">Item <span>5</span></button>
+  <button data-price="500" class="buy">Item <span>6</span></button>
+  <button data-price="600" class="buy">Item <span>7</span></button>
+  <button data-price="700" class="buy">Item <span>8</span></button>
+  <button data-price="800" class="buy">Item <span>9</span></button>
+  <button data-price="900" class="buy">Item <span>2</span></button>
+  <button data-price="1000" class="buy">Item <span>10</span></button>
+
+
+  <script src="events.js"></script>
+
+  <style>
+    body {
+      padding: 3%;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .playerCard {
+      background: white;
+      padding: 20px;
+      margin: 0 10px;
+    }
+
+    .playerCard h2 {
+      color: black;
+    }
+
+    button {
+      background-color: white;
+      color: black;
+      padding: 10px;
+      border: 0;
+    }
+  </style>
+</body>
+
+</html>

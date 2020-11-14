@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="menu__container">
+        <div class="menu__icon">
+            <div class="menu__icon--icon posabsolute">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14L3.33333 14C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667L2 10" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.3332 5.33325L7.99984 1.99992L4.6665 5.33325" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 2V10" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                      
+            </div>
+            <div class="menu_background">
+                
+            </div>
+            <div class="menu__icon--scroll posabsolute"></div>
+        </div>
+
+        <div class="modal">
+            <div class="connect-img">
+                <img src=""/>
+            </div>
+            <div class="bottom__section">
+                 <div class="bottom__section-appearance"></div>
+                 <div class="bottom__section-ad">
+
+                 </div>
+                 <div class="bottom__section-close"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu__icon--share">
+        <div class="menu__icon">
+           <div class="menu__icon--icon posabsolute">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14L3.33333 14C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667L2 10" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.3332 5.33325L7.99984 1.99992L4.6665 5.33325" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 2V10" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                      
+            </div>
+            <div class="menu_background"></div>
+            <div class="menu__icon--scroll posabsolute"></div>
+         </div>
+    </div>
+
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color:#f2f2f2;
+            position: relative;
+            font-family: 'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+        }
+        .posabsolute {
+            position:absolute;
+        }
+
+        .menu__container{
+             position:fixed;
+             bottom:20px;
+             right:10px;
+        }
+
+        .menu__icon {
+             width:50px;
+             height:50px;
+             display:block;
+             position: relative;
+             border-radius: 50%; 
+        }
+        .menu__icon::after{
+            content: " ";
+            display:block;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            border-radius: 50%; 
+        }
+        .menu__icon--icon{
+             display:flex;
+             justify-content: center;
+             align-items: center;
+             width:50px;
+             height: 50px;
+             cursor: pointer;
+             border-radius: 50%;  
+        }
+        svg {
+            
+        }
+
+      
+    </style>
+</body>
+
+</html>

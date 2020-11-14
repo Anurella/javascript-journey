@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The DOM</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <section class="testing">
+        <div> some stuff </div>
+        <div> some stuff </div>
+    </section>
+    <style>
+        .testing {
+            height:100vh;
+            background:linear-gradient(65deg,#fff 60%,rgba(255,255,255,0) 40%) center center no-repeat,
+            url('https://images.unsplash.com/photo-1558980395-be8a5fcb4251?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80') left 100% top/70% no-repeat;
+        }
+    </style>
+
+
+    <p> The Sibling Element </p>
+    <p class="anurella">I am Anurella, I <em>love</em> to Write and <strong>Make websites!</strong></p>
+    <img class="nice cool" src="https://picsum.photos/500" width="200px" />
+
+    <div class="purple"></div>
+    <div class="items">
+        <div class="item">
+            <img class="custom" data-last="bos" data-name="wes" src="https://picsum.photos/200" />
+            <img data-name="kait" src="https://picsum.photos/200" />
+            <img data-name="lux" src="https://picsum.photos/200" />
+
+            <p>Hi I'm a item</p>
+        </div>
+        <div class="item item2">
+            <img src="https://picsum.photos/200" />
+            <h2>
+                I am a heading
+                <span>I am hidden!</span>
+            </h2>
+            <p>Hi I'm a item</p>
+        </div>
+        <article class="item">
+            <h2>I'm an article</h2>
+            <p class="pizza">This is how many pizzas I ate! 🍕</p>
+        </article>
+
+    </div>
+
+    <style>
+        h2 span {
+            display: none;
+        }
+
+        img {
+            transition: all 0.2s;
+        }
+
+        .round {
+            border-radius: 50%;
+            transform: rotate(1turn) scale(2);
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+
+    <script src="creatingwithstrings.js"></script>
+    <script>
+        // polyfill for IE and firefox
+        var isIE = !!window.MSInputMethodContext && !!document.documentMode;
+        var isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") > -1;
+        if (isIE || isFirefox) {
+            var pageStylesheet = document.createElement("link");
+            pageStylesheet.rel = "stylesheet";
+            pageStylesheet.type = "text/css";
+            pageStylesheet.href = "/path/to/styles.css";
+            document.head.appendChild(pageStylesheet);
+        }
+    </script>
+</body>
+
+</html>
